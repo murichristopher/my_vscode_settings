@@ -1,0 +1,335 @@
+{
+  "code-runner.executorMap": {
+    "html": "cd $dir && firefox $fileName",
+    "javascript": "node",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby main.rb",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.list.automaticKeyboardNavigation": false,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "editor.codeLens": true,
+  "editor.linkedEditing": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.fontSize": 20,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.requireConfig,": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  //////
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.renderSideBySide": true,
+  "editor.formatOnSave": false,
+  "html.autoClosingTags": true,
+  "editor.autoIndent": "advanced",
+  "editor.colorDecorators": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code, 'Courier New', monospace",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": true,
+  "indentRainbow.colorOnWhiteSpaceOnly": false,
+  "editor.insertSpaces": true,
+  "indentRainbow.colors": [
+    "rgba(255,255,255,0.07)",
+    "rgba(127,255,244,0.07)",
+    "rgba(255,127,255,0.07)",
+    "rgba(79,236,236,0.07)"
+  ],
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "scope": [
+  //         "comment",
+  //         "comment.block",
+  //         "comment.block.documentation",
+  //         "comment.line",
+  //         "constant",
+  //         "constant.character",
+  //         "constant.character.escape",
+  //         "constant.numeric",
+  //         "constant.numeric.integer",
+  //         "constant.numeric.float",
+  //         "constant.numeric.hex",
+  //         "constant.numeric.octal",
+  //         "constant.other",
+  //         "constant.regexp",
+  //         "constant.rgb-value",
+  //         "emphasis",
+  //         "entity",
+  //         "entity.name",
+  //         "entity.name.class",
+  //         "entity.name.function",
+  //         "entity.name.method",
+  //         "entity.name.section",
+  //         "entity.name.selector",
+  //         "entity.name.tag",
+  //         "entity.name.type",
+  //         "entity.other",
+  //         "entity.other.attribute-name",
+  //         "entity.other.inherited-class",
+  //         "invalid",
+  //         "invalid.deprecated",
+  //         "invalid.illegal",
+  //         "keyword",
+  //         "keyword.control",
+  //         "keyword.operator",
+  //         "keyword.operator.new",
+  //         "keyword.operator.assignment",
+  //         "keyword.operator.arithmetic",
+  //         "keyword.operator.logical",
+  //         "keyword.other",
+  //         "markup",
+  //         "markup.bold",
+  //         "markup.changed",
+  //         "markup.deleted",
+  //         "markup.heading",
+  //         "markup.inline.raw",
+  //         "markup.inserted",
+  //         "markup.italic",
+  //         "markup.list",
+  //         "markup.list.numbered",
+  //         "markup.list.unnumbered",
+  //         "markup.other",
+  //         "markup.quote",
+  //         "markup.raw",
+  //         "markup.underline",
+  //         "markup.underline.link",
+  //         "meta",
+  //         "meta.block",
+  //         "meta.cast",
+  //         "meta.class",
+  //         "meta.function",
+  //         "meta.function-call",
+  //         "meta.preprocessor",
+  //         "meta.return-type",
+  //         "meta.selector",
+  //         "meta.tag",
+  //         "meta.type.annotation",
+  //         "meta.type",
+  //         "punctuation.definition.string.begin",
+  //         "punctuation.definition.string.end",
+  //         "punctuation.separator",
+  //         "punctuation.separator.continuation",
+  //         "punctuation.terminator",
+  //         "storage",
+  //         "storage.modifier",
+  //         "storage.type",
+  //         "string",
+  //         "string.interpolated",
+  //         "string.other",
+  //         "string.quoted",
+  //         "string.quoted.double",
+  //         "string.quoted.other",
+  //         "string.quoted.single",
+  //         "string.quoted.triple",
+  //         "string.regexp",
+  //         "string.unquoted",
+  //         "strong",
+  //         "support",
+  //         "support.class",
+  //         "support.constant",
+  //         "support.function",
+  //         "support.other",
+  //         "support.type",
+  //         "support.type.property-name",
+  //         "support.variable",
+  //         "variable",
+  //         "variable.language",
+  //         "variable.name",
+  //         "variable.other",
+  //         "variable.other.readwrite",
+  //         "variable.parameter"
+  //       ],
+  //       "settings": {
+  //         "fontStyle": ""
+  //       },
+  //       "editor.lineDecorationsWidth": 0
+  //     }
+  //   ]
+  // },
+  "editor.inlineSuggest.enabled": true,
+  "ruby.useBundler": false, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": false // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": false // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "rebornix.ruby"
+  },
+  "editor.minimap.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "javascriptreact": true,
+    "html": true,
+    "typescript": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "zenMode.silentNotifications": false,
+  "terminal.integrated.fontSize": 19,
+  "editor.stickyScroll.enabled": true, // use rubocop for formatting,
+  "explorer.autoReveal": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.showOutputWindowOn": "None",
+  "workbench.panel.defaultLocation": "right",
+  "terminal.integrated.localEchoEnabled": "off",
+  "terminal.integrated.allowWorkspaceConfiguration": true,
+  "terminal.integrated.env.osx": {
+    "VSCODEj_INTEGRATED_TERMINAL": "true"
+  },
+  "terminal.integrated.env.linux": {
+    "VSC": "VSCODE!"
+  },
+  "editor.lineDecorationsWidth": 0,
+  "editor.glyphMargin": true,
+  "errorLens.enabledDiagnosticLevels": ["info", "error"],
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.saturation": 1,
+  "material-icon-theme.opacity": 1,
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "workbench.colorTheme": "Evondev Dracula Darker Contrast",
+  "window.menuBarVisibility": "toggle",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+
+  // decrease ram usage
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true
+  },
+  "markdown.preview.fontSize": 16,
+  "[markdown]": {
+    "editor.quickSuggestions": false
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "editor.quickSuggestionsDelay": 500,
+  "editor.parameterHints.enabled": false,
+  "files.associations": {
+    "*.ts": "typescript"
+  },
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "[erb]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
+  "[erb]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
+  "terminal.integrated.tabs.enabled": false,
+  "window.zoomLevel": -1
+}
